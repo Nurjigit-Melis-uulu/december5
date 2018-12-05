@@ -12,15 +12,35 @@
     line-height: 150px;
     text-align: center;
     text-decoration: none;
-    box-shadow: 0 0 10px rgba(105, 105, 105);
+    box-shadow: 0 0 40px rgba(105, 105, 105);
+
+    animation: hoverOut 2s 1 forwards;
 }
 #anima-start:hover {
-    animation: hover 1s 1 forwards;
+    animation: hoverIn 1s 1 forwards;
 }
-@keyframes hover {
-    0% {}
-    100% {
-        transform: scale(1.2, 1.2);
-        background-color: brown;
+@keyframes hoverIn {
+    0%   {
+      transform: scale(1, 1);
+      background-color: rgb(80, 164, 212);
+      box-shadow: 0 0 40px rgb(105, 105, 105);
     }
-}
+    100% {
+      transform: scale(1.2, 1.2);
+      background-color: rgb(223, 108, 73);
+      box-shadow: 0 0 10px rgb(105, 105, 105);
+    }
+  }
+  
+  @keyframes hoverOut {
+    0%   {
+      transform: scale(1.2, 1.2);
+      background-color: rgb(223, 108, 73);
+      box-shadow: 0 0 10px rgb(105, 105, 105);
+    }
+    100% {
+      transform: scale(1, 1);
+      background-color: rgb(80, 164, 212);
+      box-shadow: 0 0 40px rgb(105, 105, 105);
+    }
+  }
