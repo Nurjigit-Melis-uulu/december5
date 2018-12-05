@@ -1,0 +1,15 @@
+#anima-start {
+    margin: 200px auto 0;
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: rgb(62, 62, 185);
+    color: white;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 200px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(105, 105, 105);
+}
