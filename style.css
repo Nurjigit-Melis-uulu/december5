@@ -15,6 +15,12 @@
     box-shadow: 0 0 10px rgba(105, 105, 105);
 }
 #anima-start:hover {
-    transform: scale(1.2, 1.2);
-    background-color: brown;
+    animation: hover 1s 1 forwards;
+}
+@keyframes hover {
+    0% {}
+    100% {
+        transform: scale(1.2, 1.2);
+        background-color: brown;
+    }
 }
